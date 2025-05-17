@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/Image/audio-svgrepo-com.svg" />
+    <link href="./output.css" rel="stylesheet">
+    <!--- This is the correct cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Music Player (JavaScript)</title>
+</head>
+
+<body
+    class="player w-full h-[100vh] justify-center items-center text-center m-0 p-0 overflow-x-hidden text-white bg-[#000544]/80
+    bg-[image:repeating-radial-gradient(circle_at_0_0,_transparent_0,_#000544_40px),repeating-linear-gradient(#2b2b2b55,_#2b2b2b)]">
+    <div class="text-[clamp(1.25rem,0.5vw+1rem,1.875rem)] w-full">
+        <h1
+            class="mb-2 font-bold underline hover:cursor-pointer hover:text-red-400 hover:scale-125 transition-transform duration-200 ease-in-out">
+            Music Player (JavaScript)
+        </h1>
+    </div>
+
+    <!-- For details area -->
+    <div class="details w-full justify-center items-center content-center justify-items-center">
+        <!-- <div id="headMe" class="flex border items-center justify-center"></div> -->
+        <div class="now-playing">Playing x O y</div>
+        <div
+            class="track-art w-[clamp(150px,60vw,500px)] h-[35vh] rounded-2xl bg-center bg-cover transition-opacity duration-500 my-3 shadow-2xl">
+        </div>
+        <div class="track-name text-[clamp(1rem,5vw,2.5rem)] font-bold backdrop-blur-sm py-1 px-12 rounded-2xl">(Track
+            Name)</div>
+        <div class="track-artist">(Track Artist)</div>
+    </div>
+
+    <!-- Track Duration Slider -->
+    <div class="slider-container my-2">
+        <span class="current-time">00:00 current-time</span>
+        <input type="range" min="1" max="100" value="99"
+            class="seek-slider hover:outline-4 hover:outline-gray-300 hover:rounded-2xl transition-all w-1/2"
+            onchange="seekTo()">
+        <span class="total-duration">00:00 total-duration</span>
+    </div>
+
+    <!-- Track Button -->
+    <div class="my-2 justify-items-center ">
+        <div
+            class="w-[clamp(150px,60vw,300px)] border rounded-2xl py-3 bg-transparent backdrop-blur-sm flex items-center justify-center space-x-5 text-3xl">
+            <button onclick="prevTrack()"
+                class="prev-track hover:scale-125 active:scale-110 transition-transform duration-200 ease-in-out"><i
+                    class="fa-solid fa-backward-step"></i></button>
+            <button onclick="playTrack()"
+                class="play-track hover:scale-125 active:scale-110 transition-transform duration-200 ease-in-out"><i
+                    class="fa-solid fa-play"></i></button>
+            <button onclick="pauseTrack()"
+                class="pause-track hover:scale-125 active:scale-110 transition-transform duration-200 ease-in-out hidden"><i
+                    class="fa-solid fa-pause"></i></button>
+            <button onclick="stopTrack()"
+                class="stop-track hover:scale-125 active:scale-110 transition-transform duration-200 ease-in-out"><i
+                    class="fa-solid fa-stop"></i></button>
+            <button onclick="nextTrack()"
+                class="next-track hover:scale-125 active:scale-110 transition-transform duration-200 ease-in-out"><i
+                    class="fa-solid fa-forward-step"></i></button>
+        </div>
+    </div>
+
+    <!-- Volume Slider -->
+    <div class="slider-container">
+        <i>Volume Down</i>
+        <input type="range" min="1" max="100" class="track-volume" onchange="setVolume()">
+        <i>Volume Up</i>
+        <span></span>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
