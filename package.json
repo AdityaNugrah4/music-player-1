@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
-    "predeploy": "npm run build",
+    "predeploy": "echo 'No build step needed'",
     "deploy": "gh-pages -d dist"
   },
   "author": "",
