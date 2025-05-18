@@ -25,20 +25,20 @@ let trackList = [
     {
         name: 'Fly Me to The Moon',
         artist: 'Frank Sinatra',
-        image: '../Image/Frank_Sinatra.jpg',
-        path: '../Audio/FlyMeToTheMoon_FrankSinatra.m4a'
+        image: 'Image/Frank_Sinatra.jpg',
+        path: 'Audio/FlyMeToTheMoon_FrankSinatra.m4a'
     },
     {
         name: 'My Way',
         artist: 'Frank Sinatra',
-        image: '../Image/Frank_Sinatra.jpg',
-        path: '../Audio/MyWay_FrankSinatra.m4a'
+        image: 'Image/Frank_Sinatra.jpg',
+        path: 'Audio/MyWay_FrankSinatra.m4a'
     },
     {
         name: 'Raindrops Keep Faling on My Head',
         artist: 'B.J. Thomas',
-        image: '../Image/BJ_Thomas.jpg',
-        path: '../Audio/RaindropsKeepFallinOnMyHead_BJThomas.m4a'
+        image: 'Image/BJ_Thomas.jpg',
+        path: 'Audio/RaindropsKeepFallinOnMyHead_BJThomas.m4a'
     }
 ]
 
