@@ -1,12 +1,10 @@
 {
   "name": "musciplayer",
-  "homepage": "https://AdityaNugrah4.github.io/music-player-1/",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
-    "deploy": "gh-pages -d dist"
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
   "author": "",
   "license": "ISC",
